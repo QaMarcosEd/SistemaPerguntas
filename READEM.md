@@ -1,7 +1,8 @@
 <h3>Esse sistema foi elaborado com o intuito de aprimorar os conhecimentos em Node.js</h3>
 
-<p>
-Dependencias utilizadas:</p>
+<p><strong>Obs: </strong>Não esqueca de instalar a pasta node_module com o comando npm install --save express no terminal do projeto.</p>
+
+<p>Dependencias utilizadas:</p>
 <ul>
     <li>body-parser</li>
     <li>ejs</li>
