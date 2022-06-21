@@ -1,0 +1,30 @@
+.bg-singularPergunta {
+    background-color: rgb(233, 235, 234);
+}
+
+.navbar-brand>img{
+    width: 100%;
+    height: 45px;
+}
+
+#formulario-pergunta {
+    margin-top: 5vh;
+}
+
+#card-pergunta {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.titulo-fazerPergunta h1{
+    font-weight: 800;
+    color: #0B5ED7;
+}
+
+.card-header h4{
+    color: #0B5ED7;
+}
+
+.fazerPergunta {
+    margin-top: 5vh;
+}

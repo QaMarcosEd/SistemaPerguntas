@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs')%>
+
+    <body class="teste">
+        <%- include('partials/navbar.ejs')%>
+            <div class="container">
+                <div class="fazerPergunta d-flex justify-content-between align-items-center">
+                    <div class="titulo-fazerPergunta">
+                        <h1>Perguntas</h1>
+                    </div>
+                    <div class="box-btn-fazerPergunta">
+                        <a href="/perguntar" class="btn btn-primary">Perguntar</a>
+                    </div>
+                </div>
+                <hr>
+                <!-- Estrutura forEach no EJS -->
+                <% perguntas.forEach(pergunta=> { %>
+                    <div class="card" id="card-pergunta">
+                        <div class="card-body">
+                            <p>
+                                <%= pergunta.titulo %>
+                            </p>
+                        </div>
+                        <card class="card-footer">
+                            <a href="/pergunta/<%= pergunta.id %>"><button
+                                    class="btn btn-primary">Responder</button></a>
+                        </card>
+                    </div>
+                    <% }) %>
+
+            </div>
+
+    </body>
+    <%- include('partials/footer.ejs')%>
