@@ -1,21 +1,66 @@
-<h3>Esse sistema foi elaborado com o intuito de aprimorar os conhecimentos em Node.js e JavaScript</h3>
+# Plataforma de Perguntas e Respostas
 
 <img src="./banner/SistemaPerguntas.png">
 
-<p><strong>Obs: </strong>Não esqueca de instalar a pasta node_module com o comando npm install --save express no terminal do projeto.</p>
+Este é um projeto de uma plataforma de perguntas e respostas desenvolvida com Node.js, Express, Sequelize e MySQL.
 
-<p>Dependencias utilizadas:</p>
-<ul>
-    <li>body-parser</li>
-    <li>ejs</li>
-    <li>express</li>
-    <li>mysql2</li>
-    <li>nodemon</li>
-    <li>sequelize</li>
-</ul>
+## Tecnologias Utilizadas
+- **Node.js**: Ambiente de execução para JavaScript no servidor
+- **Express**: Framework para criar aplicações web
+- **EJS**: Template engine para renderização dinâmica
+- **MySQL**: Banco de dados relacional
+- **Sequelize**: ORM para interação com o banco de dados
+- **Body-Parser**: Middleware para lidar com requisições HTTP
 
-<h5>Descrição do sistema:<h5/>
-<p>Um sistema de perguntas e respostas, sem sistema de login. Onde você faz a pergunta e alguem responde. As repostas ficam salvas vinculadas ao ID da pergunta.
-Os dados ficam salvos num banco de dados mysql, mas pode ser facilmente modificado.</p>
+## Instalação
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/guiperguntas.git
+   cd guiperguntas
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Configure o banco de dados no arquivo `database/database.js`.
 
-<h4>Configure a conexão com seu banco de dados na pasta database/database.js com o nome do banco, usuario e senha.<br><br> Projeto inicializado com npx nodemon</h4>
+## Como Rodar o Projeto
+1. Inicie o servidor:
+   ```bash
+   node index.js
+   ```
+   ou, para desenvolvimento com nodemon:
+   ```bash
+   npx nodemon index.js
+   ```
+2. Acesse no navegador:
+   ```
+   http://localhost:8080
+   ```
+
+## Funcionalidades
+- Listagem de perguntas na página inicial
+- Cadastro de novas perguntas
+- Visualização de perguntas individuais com respostas
+- Cadastro de respostas para perguntas
+
+## Estrutura do Projeto
+```
+/guiperguntas
+├── /database          # Configuração do banco de dados
+├── /model            # Modelos Sequelize (Pergunta e Resposta)
+├── /public           # Arquivos estáticos (CSS, JS, imagens)
+├── /views            # Páginas renderizadas pelo EJS
+├── index.js          # Arquivo principal do servidor
+├── package.json      # Configuração do projeto
+└── README.md         # Documentação
+```
+
+## Contribuição
+Se quiser contribuir, fique à vontade para abrir um pull request ou relatar problemas na aba de issues.
+
+## Autor
+- **Marcos Eduardo**
+
+## Licença
+Este projeto está licenciado sob a licença ISC.
